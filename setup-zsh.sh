@@ -12,7 +12,14 @@ sudo apt-get install zsh
 
 chsh -s $(which zsh)
 
-sudo apt-get install fonts-powerline
+sudo apt-get install powerline fonts-powerline
+
+# Install ohmyzsh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Change theme
+#cat ~/.zshrc | sed 's/ZSH_THEME=.*/ZSH_THEME="agnoster"/' > ~/.zshrc
+
 
 # Setup profiles
 function append_source_file {
