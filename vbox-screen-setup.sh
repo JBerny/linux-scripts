@@ -22,4 +22,5 @@ echo "Creating mode $MODELINE"
 xrandr --newmode ${MODELINE}
 echo "Resizing $MONITOR with $MODE"
 xrandr --addmode $MONITOR "$MODE"
-xrandr --output $MONITOR --mode "$MODE"
+xrandr --output $MONITOR --mode "$MODE" --preferred
+xrandr
